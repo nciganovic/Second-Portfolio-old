@@ -86,7 +86,7 @@ h1{
 /*** Projects ***/
 #projects{
     width: 100%; 
-    height: 100vh; 
+    min-height: 100vh; 
 }
 #projects h2{
     text-align: center;
@@ -98,8 +98,24 @@ h1{
 }
 .single-project{
     width:100%; 
+    display: flex; 
+    justify-content: center; 
 }
-.single-project img{
+#img-1-holder{
+    width: 40%;
+}
+#img-2-holder{
+    width: 10%;
+    margin-left: 3%;
+    margin-right: 3%; 
+    padding-top: 5%; 
+}
+#info{
+    width: 20%;
+}
+#img-1-holder img{
     width: 100%;
-    height: 100%;
+}
+#img-2-holder img{
+    width: 100%;
 }

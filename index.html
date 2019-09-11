@@ -3,7 +3,13 @@
     <head>
         <title>Nikola Ciganović</title>
         <meta charset="UTF-8"/>
-        <link href="css/style.css" rel="stylesheet" type="text/css"/> 
+
+	    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d27711fee5.js"></script>
     </head>
@@ -27,7 +33,9 @@
             </div>
         </div>
         <div id="projects">
-            <h2>Projects</h2>
+            <div class="h2-holder">
+                <h2>Projects</h2>
+            </div>
             <div id="all-projects">
                 <div class="single-project">
                     <div id="img-1-holder">
@@ -37,12 +45,117 @@
                         <img src="img/mobileProj1-small.png" alt="Mobile 1">
                     </div>
                     <div id="info">
-                        <h3>Naslov</h3>
-                        <p>Kratak opis web sajta</p>
-                        <a href="#">Vise detalja</a>
+                        <div id="info-content">
+                            <h3>Read and Write</h3>
+                            <div id="small-frameworks">
+                                <p><span class="small-framework">Django</span> <span class="small-framework">Bootstrap</span></p>
+                            </div>
+                            <p>This is website for bloggers. Here, you can create, read and leave comments on blogs.</p>
+                            <div id="info-btn">
+                                <a class="button-b" id="demo01" href="#animatedModal">Read more</a>
+                                <a class="button-b" href="#">View website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="horizontal-line">
+                    
+                </div>
+                <div class="single-project">
+                    <div id="img-1-holder">
+                        <img src="img/macProj2.png" alt="Desktop 1">
+                    </div>
+                    <div id="img-2-holder">
+                        <img src="img/mobileProj2-small.png" alt="Mobile 1">
+                    </div>
+                    <div id="info">
+                        <div id="info-content">
+                            <h3>Learn.py</h3>
+                            <div id="small-frameworks">
+                                <p><span class="small-framework">HTML 5</span> <span class="small-framework">CSS 3</span> <span class="small-framework">Bootstrap 4</span></p>
+                            </div>
+                            <p>Learn.py is website about Python courses. You can find couses about Python Basics, Web development and Machine Learning.</p>
+                            <div id="info-btn">
+                                <a class="button-b" href="#">Read more</a>
+                                <a class="button-b" href="#">View website</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--DEMO01-->
+        <div id="animatedModal">
+                <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+                <div id="btn-close-modal" class="close-animatedModal"> 
+                    <a href="#">CLOSE MODAL</a>
+                </div>
+                    
+                <div class="modal-content">
+                    <div id="cont">
+                        <div id="above-slider">
+                            <h4>Read and Write</h4>
+                            <p>Main technologies that i used for this project are Bootstrap for forntend and Django for backend.</p>
+                            <a id="modal-button" class="button-b" href="#">Visit webisite</a>
+                            <a id="modal-button" class="button-b" href="#">Github Code</a>
+                        </div>
+
+                        <div class="slider">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="img/proj1.png" />
+                                    </li>
+                                    <li>
+                                        <img src="img/proj1-2.png" />
+                                    </li>
+                                    <li>
+                                        <img src="img/proj1-3.png" />
+                                    </li>
+                                    <li>
+                                        <img src="img/proj1-4.png" />
+                                    </li>
+                              </ul>
+                            </div>
+                        </div>
+
+                        <div id="about-project-modal">
+                            <h4>About this project</h4>
+                            <p>This project is finsihed in september 2019. Read and Write is website where you can make your own blog, read other people's blogs and discuss different topics. I did both frontend and backend using various tools i listed bellow.</p>
+                        </div>
+                        <div id="about-project-modal">
+                            <h4>Technologies</h4>
+                            <p>Bellow is list of all things i used to make this webisite:</p>
+                            <ul>
+                                <li>Python 3.7</li>
+                                <li>Django 2.2</li>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>Bootstrap 4</li>
+                                <li>Heroku hosting</li>
+                                <li>Amazon web services</li>
+                                <li>Javascript</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/animatedModal.min.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script>
+            $("#demo01").animatedModal();
+
+            $(window).load(function(){
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    start: function(slider){
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

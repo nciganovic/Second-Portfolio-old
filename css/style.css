@@ -286,37 +286,51 @@ h1{
 }
 /***Footer***/
 footer{
-    height: 100px; 
     width: 100%; 
     background-color: rgb(249, 87, 0);
+    display: flex;
+    justify-content: center; 
+}
+#f-container{
+    width: 80%; 
+    margin: auto; 
+    margin-top: 3%; 
+    margin-bottom: 3%; 
+    display: flex;
 }
 #f-left{
-    float: left;
-    margin-left: 4%; 
+    margin-right: 5%;
+    margin-top: 3%; 
+    margin-bottom: 3%; 
+}
+#f-left h4{
+    color: white;
+    font-size: 2em; 
 }
 #f-left p{
-    line-height: 100px; 
-    font-size: 1.2em; 
-    color: white;
-    font-weight: bold; 
-}
-#f-left p a{
-    line-height: 100px; 
-    font-size: 1em; 
-    color: white;
-    font-weight: bold; 
+    color: white;  
+    font-size: 1.5em;
+    margin-top: 8px; 
+    margin-bottom: 8px; 
 }
 #f-right{
-    float: right; 
-    padding-right: 7%; 
+    
+    margin-top: 3%; 
+    margin-bottom: 3%; 
+}
+#f-right h4{
+    color: white; 
+    font-size: 2em;
 }
 #f-right i{
     color: white; 
-    line-height: 100px;
-    font-size: 4em;
-    margin-left:40px; 
+    font-size: 3em;
+    margin: 15px;  
 }
-.hm{
-    background-color: black; 
-    color: rgb(249, 87, 0);
+.mail{
+    background-color: black;
+    font-weight: bold; 
+    padding-left: 3px;
+    padding-right: 3px;
+    /*color: white !important;*/ 
 }

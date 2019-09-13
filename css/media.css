@@ -117,6 +117,22 @@
     h1{
         font-size: 2em; 
     }   
+    /***Navbar***/
+    .nav-holder a i{
+        display: block; 
+    }
+    .nav-links ul{
+        display: flex; 
+        flex-direction: column; 
+        padding-top: 50px; 
+    }
+    .nav-links{
+        display: none; 
+    }
+
+    .active{
+        display: block;
+    }
     /***Footer***/
     footer{
         flex-direction: column; 
@@ -141,7 +157,7 @@
     #above-slider h4{ 
         font-size: 2em;  
     }
-    #above-slider p{;
+    #above-slider p{
         font-size: 1em;   
     }
     #modal-button{

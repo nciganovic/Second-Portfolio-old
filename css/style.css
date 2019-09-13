@@ -70,7 +70,8 @@ h1{
 .spec{
     background-color: rgba(249, 87, 0, 0.5);
     color: white; 
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px; 
 }
 .underline{
     text-decoration: underline;
@@ -83,15 +84,15 @@ h1{
 }
 #bottom p{
     text-align: center;
-    font-size: 2em; 
+    font-size: 2.5em; 
 }
 /*** Projects ***/
 #projects{
     width: 100%; 
-    min-height: 100vh; 
+    /*min-height: 100vh; */
 }
 .h2-holder{
-    padding-top: 3%;
+    padding-top: 50px;
     display: flex; 
 }
 .h2-holder h2{
@@ -107,17 +108,15 @@ h1{
     margin-bottom: 3%;
     width:100%; 
     display: flex; 
-    justify-content: start; 
+    flex-wrap: wrap;
+    /*justify-content: start;*/ 
 }
 #img-1-holder{
-    width: 40%;
-    margin-left: 4%; 
+    width: 80%;
 }
 #img-2-holder{
-    width: 10%;
-    margin-left: 1%; 
-    margin-right: 3%; 
-    padding-top: 5%; 
+    width: 20%;
+    padding-top: 10%; 
 }
 #img-1-holder img{
     width: 100%;
@@ -126,7 +125,8 @@ h1{
     width: 100%; 
 }
 #info{
-    width: 30%;
+    margin-left: 5%; 
+    width: 37%;
     display: flex;
 }
 #info-content{
@@ -140,7 +140,8 @@ h1{
 }
 #info-content p{
     font-size: 1.2em;
-    color: black;  
+    color: black;
+    width: 80%;  
 }
 #info-btn{
     margin-top: 7%; 
@@ -180,6 +181,7 @@ h1{
 }
 /***Modal***/
 .modal-content{
+    margin-top: 50px; 
     width:100%;
     display: flex; 
 }
@@ -202,14 +204,22 @@ h1{
     width:100%;
     color: black;
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
     font-size: 1.2em;   
 }
 .flexslider{
     border: 5px solid black;  
 }
 #modal-button{
-    padding: 2%; 
+    border: 1px solid rgb(249, 87, 0);
+    padding: 3%; 
+    text-decoration: none; 
+    font-weight: bold;
+    margin-top: 3%; 
+}
+#modal-button:hover{
+    background-color: rgb(249, 87, 0);
+    color: white;  
 }
 #about-project-modal{
     margin-top: 5%; 
@@ -300,7 +310,7 @@ footer{
     margin-bottom: 3%; 
     display: flex;
 }
-#f-left{
+#f-left{ 
     margin-right: 5%;
     margin-top: 3%; 
     margin-bottom: 3%; 
@@ -315,7 +325,7 @@ footer{
     margin-top: 8px; 
     margin-bottom: 8px; 
 }
-#f-right{
+#f-right{ 
     margin-top: 3%; 
     margin-bottom: 3%; 
 }
@@ -334,4 +344,9 @@ footer{
     padding-left: 3px;
     padding-right: 3px;
     /*color: white !important;*/ 
+}
+.proj-imgs{
+    display: flex;
+    width: 50%;
+    margin-left: 4%; 
 }
